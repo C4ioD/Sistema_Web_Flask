@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/login.css') }}"
+    />
+    <title>Tela de login</title>
+  </head>
+  <body>
+    <main>
+      <div class="assinatura">By: Caio Dias (C4io-)</div>
+      <form class="login" action="" method="POST">
+        {{ form_login.csrf_token }}
+        <div class="conteudo-login">
+          <div class="titulo-login">Login</div>
+
+          <div class="email">
+            <div id="email-label">
+              {{form_login.email.label(class="label")}}
+            </div>
+            <div id="email-campo">
+              {{form_login.email(class="input-field")}}
+            </div>
+          </div>
+          <div class="senha">
+            <div id="senha-label">
+              {{form_login.senha.label(class="label")}}
+            </div>
+            <div id="senha-campo">
+              {{form_login.senha(class="input-field")}}
+            </div>
+          </div>
+          <div class="button-login">
+            {{form_login.botao_submit_login(class="btm-submit")}}
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

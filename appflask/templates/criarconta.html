@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/criarconta.css') }}"
+    />
+    <title>Tela de login</title>
+  </head>
+  <body>
+    <main>
+      <div class="assinatura">By: Caio Dias (C4io-)</div>
+      <form class="criar-conta" action="" method="POST">
+        {{ form_criarconta.csrf_token }}
+        <div class="conteudo-criarconta">
+          <div class="titulo-criarconta">Criar Conta</div>
+          <div class="username">
+            <div id="username-label">
+              {{form_criarconta.username.label(class="label")}}
+            </div>
+            <div id="username-campo">
+              {{form_criarconta.username(class="input-field")}}
+            </div>
+          </div>
+          <div class="email">
+            <div id="email-label">
+              {{form_criarconta.email.label(class="label")}}
+            </div>
+            <div id="email-campo">
+              {{form_criarconta.email(class="input-field")}}
+            </div>
+          </div>
+          <div class="senha">
+            <div id="senha-label">
+              {{form_criarconta.senha.label(class="label")}}
+            </div>
+            <div id="senha-campo">
+              {{form_criarconta.senha(class="input-field")}}
+            </div>
+          </div>
+          <div class="confirma-senha">
+            <div id="confirmar-senha-label">
+              {{form_criarconta.confirmar_senha.label(class="label")}}
+            </div>
+            <div id="confirmar-senha-campo">
+              {{form_criarconta.confirmar_senha(class="input-field")}}
+            </div>
+          </div>
+          <div class="button-criar-conta">
+            {{form_criarconta.botao_submit_criarcontar(class="btm-submit")}}
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
