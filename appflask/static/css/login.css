@@ -1,0 +1,99 @@
+body {
+  background-image: url("Background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
+}
+
+.login {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  top: 50%;
+  left: 50%;
+  background-color: rgba(187, 186, 189, 0.3);
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.conteudo-login {
+  position: relative;
+  top: 25%;
+  height: 50%;
+  text-align: center;
+}
+
+.conteudo-login {
+  color: #fff;
+}
+
+.titulo-login {
+  position: relative;
+  top: -30px;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.email,
+.senha,
+.button-login {
+  margin: 20px;
+  padding: 5x;
+}
+
+#email-label,
+#senha-label {
+  position: relative;
+  right: 135px;
+  font-size: 13px;
+  font-weight: 550;
+  text-shadow: 1px 1px #00010d;
+}
+#email-campo,
+#senha-campo {
+  position: relative;
+  top: 7px;
+}
+
+.input-field {
+  border-radius: 3px;
+  border: none;
+  width: 300px;
+  height: 30px;
+  background-color: rgb(238, 221, 221);
+  padding-left: 8px;
+  transition: border-color 0.3s; /* Adicionando transição suave na mudança de cor da borda */
+  border: 1px solid #ccc; /* Cor padrão da borda */
+}
+
+.input-field:hover {
+  border-color: rgb(2, 7, 49);
+}
+
+.button-login {
+  position: relative;
+  right: 116px;
+}
+
+.btm-submit {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(4, 0, 12, 0.9);
+  color: #fff;
+  font-size: 15px;
+  width: 80px;
+  box-shadow: 1px 1px 2px 1px rgb(0, 0, 0, 0.2);
+}
+
+.btm-submit:hover {
+  background-color: rgb(18, 0, 54);
+}
+
+.assinatura {
+  font-family: Snell Roundhand, cursive;
+  color: #fff;
+  font-style: italic;
+}
