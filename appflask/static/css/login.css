@@ -92,8 +92,16 @@ body {
   background-color: rgb(18, 0, 54);
 }
 
+#link-criarconta {
+  position: relative;
+  top: -50px;
+  text-shadow: 1px 1px #00010d;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+
 .assinatura {
   font-family: Snell Roundhand, cursive;
   color: #fff;
-  font-style: italic;
 }

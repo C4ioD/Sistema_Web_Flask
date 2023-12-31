@@ -85,8 +85,11 @@ body {
 }
 
 .button-criar-conta {
-  position: relative;
-  right: 100px;
+  position: absolute;
+  top: 305px;
+  right: 220px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .btm-submit {
@@ -97,11 +100,22 @@ body {
   color: #fff;
   font-size: 15px;
   width: 110px;
+  margin: 15px;
   box-shadow: 1px 1px 2px 1px rgb(0, 0, 0, 0.2);
 }
 
 .btm-submit:hover {
   background-color: rgb(18, 0, 54);
+}
+
+#link-login {
+  position: relative;
+  top: 15px;
+  left: 50px;
+  text-shadow: 1px 1px #00010d;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
 }
 
 .assinatura {
