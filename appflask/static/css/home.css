@@ -1,0 +1,36 @@
+body {
+  background-image: url("Background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+}
+
+h1,
+.link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 1px 1px #000;
+}
+
+.login {
+  position: relative;
+  top: 72px;
+  left: -50px;
+}
+
+.criarconta {
+  position: relative;
+  top: 50px;
+  left: 50px;
+}

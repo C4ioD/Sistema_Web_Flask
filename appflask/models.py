@@ -1,8 +1,14 @@
-from appflask import db
+from appflask import database
+from appflask import database, login_manager
+from flask_login import UserMixin
 
-class Usuario(db.Model):
-  id = db.Column(db.Integer, primary_key=True)
-  username = db.Column(db.String, nullable=False)
-  email = db.Column(db.String, nullable=False, unique=True)
-  senha = db.Column(db.String, nullable=False)
-  foto_perfil = db.Column(db.String, default='default.jpg')
+@login_manager.user_loader
+def load_usuario(id_usuario):
+  return Usuario.query.get(int(id_usuario))
+
+class Usuario(database.Model, UserMixin):
+  id = database.Column(database.Integer, primary_key=True)
+  username = database.Column(database.String, nullable=False)
+  email = database.Column(database.String, nullable=False, unique=True)
+  senha = database.Column(database.String, nullable=False)
+  foto_perfil = database.Column(database.String, default='default.jpg')

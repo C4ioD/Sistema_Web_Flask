@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina Inicial</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/home.css') }}"
+    />
+  </head>
+  <body>
+    <main>
+      <h1>Pagina em construção</h1>
+      <div class="link">
+        <div class="login"><a  href="{{url_for('login')}}">Login</a></div><div>
+        <div class="criarconta"><a href="{{url_for('criarconta')}}">Criar Conta</a></div>
+      </div>
+    </main>
+  </body>
+</html>
